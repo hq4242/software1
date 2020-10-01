@@ -3,7 +3,6 @@ session_start();
 if($_SESSION['autorizado']<>1){
     header("Location: index.php");
 }
-
 ///********VERIFICA LA OPCION CORRESPONDIENTE*****************///
 require('class_lib/funciones.php');
 $p=test_input($_POST['pass']);
